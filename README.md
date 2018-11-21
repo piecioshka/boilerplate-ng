@@ -1,48 +1,38 @@
-# ng-boilerplate
+# ng-starter
 
-[![npm version](https://badge.fury.io/js/ng-boilerplate.svg)](https://badge.fury.io/js/ng-boilerplate)
-[![downloads count](https://img.shields.io/npm/dt/ng-boilerplate.svg)](https://www.npmjs.com/~piecioshka)
-[![travis](https://img.shields.io/travis/piecioshka/ng-boilerplate.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/ng-boilerplate)
-[![dependencies](https://david-dm.org/piecioshka/ng-boilerplate.svg)](https://github.com/piecioshka/ng-boilerplate)
-[![coveralls](https://coveralls.io/repos/github/piecioshka/ng-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/ng-boilerplate?branch=master)
+[![npm version](https://badge.fury.io/js/ng-starter.svg)](https://badge.fury.io/js/ng-starter)
+[![downloads count](https://img.shields.io/npm/dt/ng-starter.svg)](https://www.npmjs.com/~piecioshka)
+[![travis](https://img.shields.io/travis/piecioshka/ng-starter.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/ng-starter)
+[![dependencies](https://david-dm.org/piecioshka/ng-starter.svg)](https://github.com/piecioshka/ng-starter)
+[![coveralls](https://coveralls.io/repos/github/piecioshka/ng-starter/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/ng-starter?branch=master)
 
-TODO
+:hammer: Simple Angular starter
 
 ## Features
 
-* :white_check_mark: Done
-* :no_entry: Not done
+### Setup app
 
-## Installation
-
-```bash
-npm install -g ng-boilerplate
-```
+* :white_check_mark: `npm i @angular/core`
+* :white_check_mark: Create project structure (app, public)
+* :white_check_mark: Create `<div id="app">` in `index.html`
+* :white_check_mark: `npm i -D webpack-cli webpack`
+    + `webpack-cli` is as tool which run `webpack`
+    + `webpack` is a main logic of how to create bundle file
+    + Create `webpack.config.js`
+* :white_check_mark: `npm i -D ts-loader typescript`
+    + `ts-loader` is a resolver of `*.ts` files
+    + `typescript` is a package which compile TypeScript syntax to JavaScript
+* :white_check_mark: `npx typescript --init`
+    + `tsconfig.json` create this file automatically
+* :white_check_mark: Use Decorators in `tsconfig.json` file
+    + uncomment `experimentalDecorators`
+* :white_check_mark: `npm i rxjs`
+    + Mandatory requirement
 
 ## Usage
 
 ```javascript
-```
-
-## CLI
-
-```bash
-```
-
-## Unit tests
-
-Use Jasmine to setup unit test:
-
-```bash
-npm test
-```
-
-## Code coverage
-
-Check code coverage with [Istanbul](https://github.com/gotwarlost/istanbul):
-
-```bash
-npm run coverage
+git clone 
 ```
 
 ## License

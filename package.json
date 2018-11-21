@@ -1,7 +1,7 @@
 {
     "private": true,
-    "name": "ng-boilerplate",
-    "description": "TODO",
+    "name": "ng-starter",
+    "description": "Simple Angular starter",
     "version": "1.0.0",
     "license": "MIT",
     "author": {
@@ -10,19 +10,28 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
+        "build": "webpack-cli",
         "clear": "rm -rf dist/ coverage/ .nyc_output/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "npm run test:unit",
-        "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "test:unit": "mocha",
         "coverage": "nyc npm run test && nyc report --reporter=html",
         "coveralls": "nyc report --reporter=text-lcov | coveralls -v",
         "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
-        "lint": "eslint .",
+        "lint": "eslint ."
     },
-    "dependencies": {},
-    "devDependencies": {},
+    "dependencies": {
+        "@angular/core": "^7.0.4",
+        "rxjs": "^6.3.3"
+    },
+    "devDependencies": {
+        "ts-loader": "^5.3.0",
+        "typescript": "^3.1.6",
+        "webpack": "^4.26.0",
+        "webpack-cli": "^3.1.2"
+    },
     "repository": {
         "type": "git",
-        "url": "git@github.com:piecioshka/ng-boilerplate.git"
+        "url": "git@github.com:piecioshka/ng-starter.git"
     }
 }
