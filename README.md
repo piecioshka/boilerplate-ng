@@ -13,8 +13,18 @@
 ### Setup app
 
 * :white_check_mark: `npm i @angular/core`
-* :white_check_mark: Create project structure (app, public)
-* :white_check_mark: Create `<div id="app">` in `index.html`
+* :white_check_mark: Create project structure (`app`, `public`)
+    + app/components/app.components.html
+        - Write markup
+    + app/components/app.components.ts
+        - Create class
+        - Decorate with `@Component`
+    + app/module/app.module.ts
+        - Create class
+        - Decorate with `@NgModule`
+        - Import `@Component` and put intro: declarations & bootstrap
+    + app/main.ts
+        - Import `@NgModule`
 * :white_check_mark: `npm i -D webpack-cli webpack`
     + `webpack-cli` is as tool which run `webpack`
     + `webpack` is a main logic of how to create bundle file
@@ -28,12 +38,37 @@
     + uncomment `experimentalDecorators`
 * :white_check_mark: `npm i rxjs`
     + Mandatory requirement
+* :white_check_mark: `npm i @angular/platform-browser-dynamic`
+* :white_check_mark: `npm i @angular/common`
+* :white_check_mark: `npm i @angular/compiler`
+* :white_check_mark: `npm i @angular/platform-browser`
+* :white_check_mark: `???`
+    + Problem with XHR request for HTML file with template
+* :white_check_mark: `npm i zone.js`
+    + Resolve problem `In this configuration Angular requires Zone.js`
+    + Add in `main.ts` that line: `import 'zone.js';`
 
 ## Usage
 
-```javascript
-git clone 
-```
+1. Clone project
+
+    ```bash
+    git clone git@github.com:piecioshka/ng-starter.git
+    ```
+
+2. Remove current remote
+
+    ```bash
+    git remote remove origin
+    ```
+
+3. Add your custom remote
+
+    ```bash
+    git remote add origin YOUR_CUSTOM_REMOTE
+    ```
+
+4. Add commits and pushes!
 
 ## License
 

@@ -1,4 +1,7 @@
-import { HomepageComponent } from './components/homepage.component';
+import 'zone.js/dist/zone'
 
-console.log('Hello world');
-console.log(HomepageComponent);
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './modules/app.module';
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+    .catch(err => console.error(err));

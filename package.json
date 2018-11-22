@@ -11,6 +11,7 @@
     },
     "scripts": {
         "build": "webpack-cli",
+        "watch": "webpack-cli -w",
         "clear": "rm -rf dist/ coverage/ .nyc_output/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "npm run test:unit",
@@ -21,8 +22,16 @@
         "lint": "eslint ."
     },
     "dependencies": {
+        "@angular/common": "^7.0.4",
+        "@angular/compiler": "^7.0.4",
         "@angular/core": "^7.0.4",
-        "rxjs": "^6.3.3"
+        "@angular/forms": "^7.0.4",
+        "@angular/platform-browser": "^7.0.4",
+        "@angular/platform-browser-dynamic": "^7.0.4",
+        "@angular/router": "^7.0.4",
+        "core-js": "^2.5.7",
+        "rxjs": "^6.3.3",
+        "zone.js": "^0.8.26"
     },
     "devDependencies": {
         "ts-loader": "^5.3.0",
