@@ -4,10 +4,8 @@ import { APIService } from '../services/api.service';
 
 @Component({
     selector: 'app-root',
-    // templateUrl: './app.component.html',
-    template: `
-        hi {{ text }}!
-    `,
+    template: require('./app.component.html'),
+    styles: [require('./app.component.css')],
 })
 export class AppComponent implements OnInit {
 

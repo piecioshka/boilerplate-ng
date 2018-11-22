@@ -68,10 +68,17 @@
             "dom"
         ],
 
-* :white_check_mark: `???`
-    + Problem with XHR request for HTML (template) file
-    + Problem with XHR request for CSS file
+* :white_check_mark: Resolve problem with XHR request for HTML file (template)
 
+    1. Install `npm i @types/node raw-loader`
+    2. Use `require()` to load `*.html` file
+    3. Add into `webpack.config.js` new rules with test regexp /\.html$/
+
+* :white_check_mark: Resolve problem with XHR request for CSS files
+
+    1. Install `npm i @types/node raw-loader`
+    2. Use `require()` to load `*.css` files
+    3. Add into `webpack.config.js` new rules with test regexp /\.css$/
 
 ## Usage
 
