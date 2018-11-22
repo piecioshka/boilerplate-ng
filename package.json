@@ -19,18 +19,19 @@
         "coverage": "nyc npm run test && nyc report --reporter=html",
         "coveralls": "nyc report --reporter=text-lcov | coveralls -v",
         "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
-        "lint": "eslint ."
+        "lint": "tslint --project ."
     },
     "dependencies": {
-        "@angular/common": "^7.0.4",
-        "@angular/compiler": "^7.0.4",
-        "@angular/core": "^7.0.4",
-        "@angular/forms": "^7.0.4",
-        "@angular/platform-browser": "^7.0.4",
-        "@angular/platform-browser-dynamic": "^7.0.4",
-        "@angular/router": "^7.0.4",
+        "@angular/common": "^7.1.0",
+        "@angular/compiler": "^7.1.0",
+        "@angular/core": "^7.1.0",
+        "@angular/forms": "^7.1.0",
+        "@angular/platform-browser": "^7.1.0",
+        "@angular/platform-browser-dynamic": "^7.1.0",
+        "@angular/router": "^7.1.0",
         "core-js": "^2.5.7",
         "rxjs": "^6.3.3",
+        "tslint": "^5.11.0",
         "zone.js": "^0.8.26"
     },
     "devDependencies": {

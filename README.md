@@ -33,20 +33,45 @@
     + `ts-loader` is a resolver of `*.ts` files
     + `typescript` is a package which compile TypeScript syntax to JavaScript
 * :white_check_mark: `npx typescript --init`
-    + `tsconfig.json` create this file automatically
-* :white_check_mark: Use Decorators in `tsconfig.json` file
-    + uncomment `experimentalDecorators`
+    + Command will create file `tsconfig.json`
 * :white_check_mark: `npm i rxjs`
     + Mandatory requirement
 * :white_check_mark: `npm i @angular/platform-browser-dynamic`
 * :white_check_mark: `npm i @angular/common`
 * :white_check_mark: `npm i @angular/compiler`
 * :white_check_mark: `npm i @angular/platform-browser`
+* :white_check_mark: Resolve problems `In this configuration Angular requires Zone.js`
+    + Install `npm i zone.js`
+    + Add in `main.ts`:
+
+        import 'zone.js';
+
+* :white_check_mark: Resolve problem `Error: Can't resolve all parameters for ApplicationModule: (?).`
+
+    Add in `main.ts`
+
+        import 'core-js/es6/reflect';
+        import 'core-js/es7/reflect';
+
+* :white_check_mark: Create service `APIService.ts`
+* :white_check_mark: Resolve problem: `compiler.js:2697 Uncaught Error: Can't resolve all parameters for AppComponent: (?).`
+
+    In file `tsconfig.json` uncomment `experimentalDecorators` flag.
+    In file `tsconfig.json` uncomment `emitDecoratorMetadata` flag.
+
+* :white_check_mark: Resolve problem: `An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your '--lib' option. [2705]`
+
+    In file `tsconfig.json` uncomment `lib` list and put that list:
+
+        "lib": [
+            "es2015",
+            "dom"
+        ],
+
 * :white_check_mark: `???`
-    + Problem with XHR request for HTML file with template
-* :white_check_mark: `npm i zone.js`
-    + Resolve problem `In this configuration Angular requires Zone.js`
-    + Add in `main.ts` that line: `import 'zone.js';`
+    + Problem with XHR request for HTML (template) file
+    + Problem with XHR request for CSS file
+
 
 ## Usage
 
