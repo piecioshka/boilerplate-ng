@@ -1,15 +1,17 @@
-$background: purple;
-$color: white;
+$background: #1680ad;
+$color: #fff;
 
 :host {
-    background: $background;
-    color: $color;
     display: block;
     width: 400px;
     height: 200px;
     padding: 20px;
 
+    background: $background;
+    color: $color;
+    font-family: 'Open Sans', sans-serif;
+
     strong {
-        color: darken($color, 50);
+        color: lighten($background, 50);
     }
 }

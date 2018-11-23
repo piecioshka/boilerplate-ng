@@ -85,10 +85,22 @@
     1. Install `npm i node-sass`
     2. Define task in `package.json`
 
-        npm run build-scss: `node-sass app -o app`
-        npm run watch-scss: `node-sass --watch app -o app`
+        npm run build-styles: `node-sass app -o app`
+        npm run watch-styles: `npm run build -- --watch`
 
     3. Ignore all `*.css` files
+
+* :white_check_mark: Support display progress during creating bundle by Webpack
+
+    1. Set property in `webpack.config.js` (https://webpack.js.org/configuration/stats/)
+
+        stats: 'errors-only',
+
+    2. Add plugins to display progress (https://www.npmjs.com/package/simple-progress-webpack-plugin)
+
+        plugins: [
+            new SimpleProgressWebpackPlugin()
+        ],
 
 ## Usage
 

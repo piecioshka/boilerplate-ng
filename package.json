@@ -10,15 +10,15 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "build": "npm run build-scss && npm run build-scripts",
-        "build-scss": "node-sass app -o app",
+        "build": "npm run build-styles && npm run build-scripts",
+        "build-styles": "node-sass app/ -o app/ --output-style expanded",
         "build-scripts": "webpack-cli",
 
-        "watch": "npm run watch-scss & npm run watch-scripts",
-        "watch-scss": "node-sass --watch app -o app",
-        "watch-scripts": "webpack-cli -w",
+        "watch": "npm run watch-styles & npm run watch-scripts",
+        "watch-styles": "npm run build-styles -- --watch",
+        "watch-scripts": "npm run build-scripts -- --watch",
 
-        "clear": "rm -rf dist/ coverage/ .nyc_output/",
+        "clear": "rm -rf dist/ coverage/ .nyc_output/ app/**/*.css",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "npm run test:unit",
         "test:unit": "mocha",
@@ -43,6 +43,7 @@
     },
     "devDependencies": {
         "raw-loader": "^0.5.1",
+        "simple-progress-webpack-plugin": "^1.1.2",
         "ts-loader": "^5.3.0",
         "tslint": "^5.11.0",
         "typescript": "^3.1.6",

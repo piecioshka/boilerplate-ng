@@ -1,4 +1,5 @@
 const path = require('path');
+const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -13,6 +14,14 @@ module.exports = {
         filename: 'main.js',
         path: path.join(__dirname, 'dist')
     },
+
+    stats: 'errors-only',
+
+    plugins: [
+        new SimpleProgressWebpackPlugin({
+            // format: 'minimal'
+        })
+    ],
 
     module: {
         rules: [

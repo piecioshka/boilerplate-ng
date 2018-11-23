@@ -9,7 +9,7 @@ import { APIService } from '../services/api.service';
 })
 export class AppComponent implements OnInit {
 
-    public text = 'Piotr';
+    public text = 'world';
 
     constructor(
         public api: APIService,
