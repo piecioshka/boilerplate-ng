@@ -80,6 +80,16 @@
     2. Use `require()` to load `*.css` files
     3. Add into `webpack.config.js` new rules with test regexp /\.css$/
 
+* :white_check_mark: Resolve problem support SCSS files
+
+    1. Install `npm i node-sass`
+    2. Define task in `package.json`
+
+        npm run build-scss: `node-sass app -o app`
+        npm run watch-scss: `node-sass --watch app -o app`
+
+    3. Ignore all `*.css` files
+
 ## Usage
 
 1. Clone project

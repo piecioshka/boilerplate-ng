@@ -10,8 +10,14 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "build": "webpack-cli",
-        "watch": "webpack-cli -w",
+        "build": "npm run build-scss && npm run build-scripts",
+        "build-scss": "node-sass app -o app",
+        "build-scripts": "webpack-cli",
+
+        "watch": "npm run watch-scss & npm run watch-scripts",
+        "watch-scss": "node-sass --watch app -o app",
+        "watch-scripts": "webpack-cli -w",
+
         "clear": "rm -rf dist/ coverage/ .nyc_output/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "npm run test:unit",
@@ -31,6 +37,7 @@
         "@angular/router": "^7.1.0",
         "@types/node": "^10.12.10",
         "core-js": "^2.5.7",
+        "node-sass": "^4.10.0",
         "rxjs": "^6.3.3",
         "zone.js": "^0.8.26"
     },

@@ -1,0 +1,15 @@
+$background: purple;
+$color: white;
+
+:host {
+    background: $background;
+    color: $color;
+    display: block;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+
+    strong {
+        color: darken($color, 50);
+    }
+}
