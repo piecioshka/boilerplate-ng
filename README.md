@@ -10,7 +10,9 @@
 
 ## Features
 
-### Setup app
+* :white_check_mark: Create empty Angular app
+
+## Step by step 👣
 
 * :white_check_mark: `npm i @angular/core`
 * :white_check_mark: Create project structure (`app`, `public`)
