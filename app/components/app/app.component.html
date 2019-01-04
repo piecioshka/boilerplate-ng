@@ -1,0 +1,9 @@
+<h1>My first Angular app</h1>
+
+<button
+    (click)="toggleDisplayLabel()"
+>Toggle display label</button>
+
+<app-welcome
+    *ngIf="isLabelVisible"
+></app-welcome>

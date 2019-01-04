@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from '../components/app.component';
-import { APIService } from '../services/api.service';
+import { AppComponent } from '../components/app/app.component';
+import { WelcomeComponent } from '../components/welcome/welcome.component';
+
+import { APIService } from "../services/api.service";
 
 @NgModule({
     imports: [
@@ -10,9 +12,10 @@ import { APIService } from '../services/api.service';
     ],
     declarations: [
         AppComponent,
+        WelcomeComponent,
     ],
     providers: [
-        APIService,
+        APIService
     ],
     bootstrap: [
         AppComponent,
