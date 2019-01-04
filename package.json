@@ -13,12 +13,11 @@
         "build": "npm run build-styles && npm run build-scripts",
         "build-styles": "node-sass app/ -o app/ --output-style expanded",
         "build-scripts": "webpack-cli",
-
         "watch": "npm run watch-styles & npm run watch-scripts",
         "watch-styles": "npm run build-styles -- --watch",
         "watch-scripts": "npm run build-scripts -- --watch",
-
-        "clear": "rm -rf dist/ coverage/ .nyc_output/ app/**/*.css",
+        "start": "http-server public/ -d false -g",
+        "clear": "rm -rf public/dist/ coverage/ .nyc_output/ app/**/*.css",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "npm run test:unit",
         "test:unit": "mocha",
@@ -37,6 +36,7 @@
         "@angular/router": "^7.1.0",
         "@types/node": "^10.12.10",
         "core-js": "^2.5.7",
+        "http-server": "^0.11.1",
         "node-sass": "^4.10.0",
         "rxjs": "^6.3.3",
         "zone.js": "^0.8.26"
