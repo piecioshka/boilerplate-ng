@@ -3,7 +3,6 @@
 [![npm version](https://badge.fury.io/js/ng-starter.svg)](https://badge.fury.io/js/ng-starter)
 [![downloads count](https://img.shields.io/npm/dt/ng-starter.svg)](https://www.npmjs.com/~piecioshka)
 [![travis](https://img.shields.io/travis/piecioshka/ng-starter.svg)](https://travis-ci.org/piecioshka/ng-starter)
-[![dependencies](https://david-dm.org/piecioshka/ng-starter.svg)](https://github.com/piecioshka/ng-starter)
 [![coveralls](https://coveralls.io/repos/github/piecioshka/ng-starter/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/ng-starter?branch=master)
 
 :hammer: Simple Angular starter
