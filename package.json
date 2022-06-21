@@ -22,7 +22,6 @@
         "test": "npm run test:unit",
         "test:unit": "mocha",
         "coverage": "nyc npm run test && nyc report --reporter=html",
-        "coveralls": "nyc report --reporter=text-lcov | coveralls -v",
         "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
         "lint": "tslint --project ."
     },
