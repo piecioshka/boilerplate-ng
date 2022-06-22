@@ -82,10 +82,10 @@
 
 * :white_check_mark: Resolve problem support SCSS files
 
-    1. Install `npm i node-sass`
+    1. Install `npm i sass`
     2. Define task in `package.json`
 
-        npm run build-styles: `node-sass app -o app`
+        npm run build-styles: `sass app -o app`
         npm run watch-styles: `npm run build -- --watch`
 
     3. Ignore all `*.css` files
