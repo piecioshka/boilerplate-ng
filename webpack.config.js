@@ -9,7 +9,7 @@ module.exports = {
         extensions: [".ts", ".js"],
     },
 
-    entry: path.join(__dirname, "app", "scripts", "main.ts"),
+    entry: path.join(__dirname, "src", "app", "main.ts"),
 
     output: {
         filename: "bundle.js",
@@ -23,7 +23,7 @@ module.exports = {
             // format: 'minimal'
         }),
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, "app", "index.html"),
+            template: path.join(__dirname, "src", "index.html"),
         }),
     ],
 

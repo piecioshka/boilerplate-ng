@@ -12,7 +12,7 @@
     "scripts": {
         "dev": "webpack-dev-server",
         "build": "npm run build-styles && npm run build-scripts",
-        "build-styles": "sass app/:app/",
+        "build-styles": "sass src/:src/",
         "build-scripts": "webpack-cli",
         "watch": "npm run watch-styles & npm run watch-scripts",
         "watch-styles": "npm run build-styles -- --watch",
