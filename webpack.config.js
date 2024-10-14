@@ -1,42 +1,53 @@
-const path = require('path');
-const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
+const path = require("path");
+const SimpleProgressWebpackPlugin = require("simple-progress-webpack-plugin");
 
 module.exports = {
-    mode: 'development',
+    mode: "development",
 
     resolve: {
-        extensions: ['.ts', '.js']
+        extensions: [".ts", ".js"],
     },
 
-    entry: path.join(__dirname, 'app', 'main.ts'),
+    entry: path.join(__dirname, "app", "scripts", "main.ts"),
 
     output: {
-        filename: 'bundle.js',
-        path: path.join(__dirname, 'public', 'dist')
+        filename: "bundle.js",
+        path: path.join(__dirname, "dist"),
     },
 
-    stats: 'errors-only',
+    stats: "errors-only",
 
     plugins: [
         new SimpleProgressWebpackPlugin({
             // format: 'minimal'
-        })
+        }),
     ],
 
     module: {
         rules: [
             {
                 test: /\.ts$/,
-                loader: 'ts-loader'
+                loader: "ts-loader",
             },
             {
                 test: /\.html$/,
-                loader: 'raw-loader'
+                loader: "html-loader",
+            },
+            {
+                test: /index.html$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name].[ext]",
+                        },
+                    },
+                ],
             },
             {
                 test: /\.css$/,
-                loader: 'raw-loader'
-            }
-        ]
-    }
+                loader: "raw-loader",
+            },
+        ],
+    },
 };

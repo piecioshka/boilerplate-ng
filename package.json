@@ -10,15 +10,15 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "prebuild": "rm -rf public/dist/ app/components/**/*.css app/components/**/*.css.map",
+        "prebuild": "rm -rf dist/ app/components/**/*.css app/components/**/*.css.map",
         "build": "npm run build-styles && npm run build-scripts",
         "build-styles": "sass app/:app/",
         "build-scripts": "webpack-cli",
         "watch": "npm run watch-styles & npm run watch-scripts",
         "watch-styles": "npm run build-styles -- --watch",
         "watch-scripts": "npm run build-scripts -- --watch",
-        "start": "http-server public/ -c-1 -d false -g",
-        "clear": "rm -rf public/dist/ coverage/ .nyc_output/ app/components/**/*.css app/components/**/*.css.map",
+        "start": "http-server dist/ -c-1 -d false -g",
+        "clear": "rm -rf dist/ coverage/ .nyc_output/ app/components/**/*.css app/components/**/*.css.map",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "npm run test:unit",
         "test:unit": "jest",
@@ -26,7 +26,7 @@
         "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
         "lint": "tslint --project .",
         "predeploy": "npm run build",
-        "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d public/ -f"
+        "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d dist/ -f"
     },
     "dependencies": {
         "@angular/common": "^18.2.8",
@@ -43,7 +43,9 @@
     "devDependencies": {
         "@types/node": "^22.7.5",
         "cross-env": "^7.0.3",
+        "file-loader": "^6.2.0",
         "gh-pages": "^6.2.0",
+        "html-loader": "^5.1.0",
         "http-server": "^14.1.1",
         "jest": "^29.7.0",
         "nyc": "^17.1.0",
