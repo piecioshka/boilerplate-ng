@@ -10,7 +10,7 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "prebuild": "rm -rf app/components/**/*.css app/components/**/*.css.map",
+        "prebuild": "rm -rf public/dist/ app/components/**/*.css app/components/**/*.css.map",
         "build": "npm run build-styles && npm run build-scripts",
         "build-styles": "sass app/:app/",
         "build-scripts": "webpack-cli",
@@ -26,7 +26,7 @@
         "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
         "lint": "tslint --project .",
         "predeploy": "npm run build",
-        "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d public/"
+        "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d public/ -f"
     },
     "dependencies": {
         "@angular/common": "^14.0.2",
