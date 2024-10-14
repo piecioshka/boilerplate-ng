@@ -13,29 +13,29 @@
 * ✅ Support Webpack v5
 * ✅ Support Node.js v18 (defined in `.nvmrc`)
 
-## Usage
+## Installation
 
 ```bash
-# 1. Clone the project:
 git clone git@github.com:piecioshka/boilerplate-ng.git
-
-# 2. Remove current remote:
 git remote remove origin
-
-# 3. Add your custom remote:
 git remote add origin YOUR_CUSTOM_REMOTE
-
-# 4. Install dependencies:
 npm install
+```
 
-# 5. Run development mode:
-npm run watch
+## Development
 
-# 6. Start a static server:
-npm run start
+```bash
+npm run dev # run webpack-dev-server with hot reload
 
-# 7. Open browser 🚀:
-open http://localhost:8080
+# or
+npm run watch # observe changes in files
+npm run start # run server
+```
+
+## Deployment
+
+```bash
+npm run deploy
 ```
 
 ## License

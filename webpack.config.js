@@ -14,6 +14,7 @@ module.exports = {
     output: {
         filename: "bundle.js",
         path: path.join(__dirname, "dist"),
+        clean: true,
     },
 
     stats: "errors-only",
