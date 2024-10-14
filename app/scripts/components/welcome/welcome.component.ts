@@ -4,7 +4,7 @@ import { APIService } from "../../services/api.service";
 
 @Component({
     selector: "app-welcome",
-    template: require("./welcome.component.html").default,
+    template: require("./welcome.component.html"),
 })
 export class WelcomeComponent implements OnInit {
     public text = "world";

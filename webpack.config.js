@@ -1,5 +1,6 @@
 const path = require("path");
 const SimpleProgressWebpackPlugin = require("simple-progress-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     mode: "development",
@@ -21,6 +22,9 @@ module.exports = {
         new SimpleProgressWebpackPlugin({
             // format: 'minimal'
         }),
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, "app", "index.html"),
+        }),
     ],
 
     module: {
@@ -31,22 +35,11 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                loader: "html-loader",
+                use: ["to-string-loader", "html-loader"],
             },
             {
-                test: /index.html$/,
-                use: [
-                    {
-                        loader: "file-loader",
-                        options: {
-                            name: "[name].[ext]",
-                        },
-                    },
-                ],
-            },
-            {
-                test: /\.css$/,
-                loader: "raw-loader",
+                test: /\.scss$/,
+                use: ["to-string-loader", "css-loader", "sass-loader"],
             },
         ],
     },

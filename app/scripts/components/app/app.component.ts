@@ -2,8 +2,8 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: "app-root",
-    template: require("./app.component.html").default,
-    styles: [require("./app.component.css").default],
+    template: require("./app.component.html"),
+    styles: require("./app.component.scss"),
 })
 export class AppComponent {
     public isLabelVisible = true;

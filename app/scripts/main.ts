@@ -1,6 +1,5 @@
 import "core-js/es/reflect";
-import 'zone.js';
-import '../index.html';
+import "zone.js";
 
 // import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
