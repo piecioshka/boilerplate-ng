@@ -10,6 +10,7 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
+        "prebuild": "rm -rf public/dist/",
         "build": "npm run build-styles && npm run build-scripts",
         "build-styles": "sass app/:app/",
         "build-scripts": "webpack-cli",
@@ -55,6 +56,6 @@
         "url": "git@github.com:piecioshka/boilerplate-ng.git"
     },
     "engines": {
-        "node": ">=10.0.0"
+        "node": ">=16.20.2"
     }
 }

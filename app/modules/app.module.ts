@@ -10,6 +10,6 @@ import { APIService } from "../services/api.service";
     imports: [BrowserModule],
     declarations: [AppComponent, WelcomeComponent],
     providers: [APIService],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
 })
 export class AppModule {}

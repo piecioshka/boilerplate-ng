@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Inject, OnInit } from "@angular/core";
 
 import { APIService } from "../../services/api.service";
 
@@ -9,7 +9,7 @@ import { APIService } from "../../services/api.service";
 export class WelcomeComponent implements OnInit {
     public text = "world";
 
-    public constructor(public api: APIService) {}
+    constructor(@Inject(APIService) private api: APIService) {}
 
     public ngOnInit() {
         this.render();
