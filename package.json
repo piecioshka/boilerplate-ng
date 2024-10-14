@@ -17,7 +17,7 @@
         "watch-styles": "npm run build-styles -- --watch",
         "watch-scripts": "npm run build-scripts -- --watch",
         "start": "http-server public/ -c-1 -d false -g",
-        "clear": "rm -rf public/dist/ coverage/ .nyc_output/ app/**/*.css",
+        "clear": "rm -rf public/dist/ coverage/ .nyc_output/ app/**/*.css app/**/*.css.map",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "npm run test:unit",
         "test:unit": "mocha",
