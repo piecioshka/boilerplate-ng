@@ -1,6 +1,6 @@
 # boilerplate-ng
 
-🔨 Simple Angular starter (An empty Angular app without Angular CLI)
+🍴 Starter with Angular (Simple app without Angular CLI stuff)
 
 ## Preview 🎉
 
