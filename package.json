@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "ng-starter",
+    "name": "boilerplate-ng",
     "description": "Simple Angular starter",
     "version": "1.0.0",
     "license": "MIT",
@@ -51,6 +51,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:piecioshka/ng-starter.git"
+        "url": "git@github.com:piecioshka/boilerplate-ng.git"
     }
 }

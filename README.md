@@ -1,7 +1,7 @@
-# ng-starter
+# boilerplate-ng
 
-[![npm version](https://badge.fury.io/js/ng-starter.svg)](https://badge.fury.io/js/ng-starter)
-[![downloads count](https://img.shields.io/npm/dt/ng-starter.svg)](https://www.npmjs.com/~piecioshka)
+[![npm version](https://badge.fury.io/js/boilerplate-ng.svg)](https://badge.fury.io/js/boilerplate-ng)
+[![downloads count](https://img.shields.io/npm/dt/boilerplate-ng.svg)](https://www.npmjs.com/~piecioshka)
 
 :hammer: Simple Angular starter
 
@@ -106,7 +106,7 @@
 1. Clone project
 
     ```bash
-    git clone git@github.com:piecioshka/ng-starter.git
+    git clone git@github.com:piecioshka/boilerplate-ng.git
     ```
 
 2. Remove current remote
