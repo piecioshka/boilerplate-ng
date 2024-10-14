@@ -9,8 +9,9 @@
 ## Features
 
 * ✅ Support Angular v18
-* ✅ Support Webpack 5
-* ✅ Support Node.js v18 (define in `.nvmrc`)
+* ✅ Support RxJS v7
+* ✅ Support Webpack v5
+* ✅ Support Node.js v18 (defined in `.nvmrc`)
 
 ## Usage
 
