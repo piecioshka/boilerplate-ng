@@ -1,18 +1,15 @@
 # boilerplate-ng
 
-[![npm version](https://badge.fury.io/js/boilerplate-ng.svg)](https://badge.fury.io/js/boilerplate-ng)
-[![downloads count](https://img.shields.io/npm/dt/boilerplate-ng.svg)](https://www.npmjs.com/~piecioshka)
-
-:hammer: Simple Angular starter
+🔨 Simple Angular starter
 
 ## Features
 
-* :white_check_mark: Create empty Angular app
+* ✅ Create empty Angular app
 
 ## Step by step 👣
 
-* :white_check_mark: `npm i @angular/core`
-* :white_check_mark: Create project structure (`app`, `public`)
+* ✅ `npm i @angular/core`
+* ✅ Create project structure (`app`, `public`)
     + app/components/app.components.html
         - Write markup
     + app/components/app.components.ts
@@ -24,41 +21,41 @@
         - Import `@Component` and put intro: declarations & bootstrap
     + app/main.ts
         - Import `@NgModule`
-* :white_check_mark: `npm i -D webpack-cli webpack`
+* ✅ `npm i -D webpack-cli webpack`
     + `webpack-cli` is as tool which run `webpack`
     + `webpack` is a main logic of how to create bundle file
     + Create `webpack.config.js`
-* :white_check_mark: `npm i -D ts-loader typescript`
+* ✅ `npm i -D ts-loader typescript`
     + `ts-loader` is a resolver of `*.ts` files
     + `typescript` is a package which compile TypeScript syntax to JavaScript
-* :white_check_mark: `npx typescript --init`
+* ✅ `npx typescript --init`
     + Command will create file `tsconfig.json`
-* :white_check_mark: `npm i rxjs`
+* ✅ `npm i rxjs`
     + Mandatory requirement
-* :white_check_mark: `npm i @angular/platform-browser-dynamic`
-* :white_check_mark: `npm i @angular/common`
-* :white_check_mark: `npm i @angular/compiler`
-* :white_check_mark: `npm i @angular/platform-browser`
-* :white_check_mark: Resolve problems `In this configuration Angular requires Zone.js`
+* ✅ `npm i @angular/platform-browser-dynamic`
+* ✅ `npm i @angular/common`
+* ✅ `npm i @angular/compiler`
+* ✅ `npm i @angular/platform-browser`
+* ✅ Resolve problems `In this configuration Angular requires Zone.js`
     + Install `npm i zone.js`
     + Add in `main.ts`:
 
         import 'zone.js';
 
-* :white_check_mark: Resolve problem `Error: Can't resolve all parameters for ApplicationModule: (?).`
+* ✅ Resolve problem `Error: Can't resolve all parameters for ApplicationModule: (?).`
 
     Add in `main.ts`
 
         import 'core-js/es6/reflect';
         import 'core-js/es7/reflect';
 
-* :white_check_mark: Create service `APIService.ts`
-* :white_check_mark: Resolve problem: `compiler.js:2697 Uncaught Error: Can't resolve all parameters for AppComponent: (?).`
+* ✅ Create service `APIService.ts`
+* ✅ Resolve problem: `compiler.js:2697 Uncaught Error: Can't resolve all parameters for AppComponent: (?).`
 
     In file `tsconfig.json` uncomment `experimentalDecorators` flag.
     In file `tsconfig.json` uncomment `emitDecoratorMetadata` flag.
 
-* :white_check_mark: Resolve problem: `An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your '--lib' option. [2705]`
+* ✅ Resolve problem: `An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your '--lib' option. [2705]`
 
     In file `tsconfig.json` uncomment `lib` list and put that list:
 
@@ -67,19 +64,19 @@
             "dom"
         ],
 
-* :white_check_mark: Resolve problem with XHR request for HTML file (template)
+* ✅ Resolve problem with XHR request for HTML file (template)
 
     1. Install `npm i @types/node raw-loader`
     2. Use `require()` to load `*.html` file
     3. Add into `webpack.config.js` new rules with test regexp /\.html$/
 
-* :white_check_mark: Resolve problem with XHR request for CSS files
+* ✅ Resolve problem with XHR request for CSS files
 
     1. Install `npm i @types/node raw-loader`
     2. Use `require()` to load `*.css` files
     3. Add into `webpack.config.js` new rules with test regexp /\.css$/
 
-* :white_check_mark: Resolve problem support SCSS files
+* ✅ Resolve problem support SCSS files
 
     1. Install `npm i sass`
     2. Define task in `package.json`
@@ -89,7 +86,7 @@
 
     3. Ignore all `*.css` files
 
-* :white_check_mark: Support display progress during creating bundle by Webpack
+* ✅ Support display progress during creating bundle by Webpack
 
     1. Set property in `webpack.config.js` (https://webpack.js.org/configuration/stats/)
 
@@ -125,4 +122,4 @@
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2018
+[The MIT License](https://piecioshka.mit-license.org) @ 2018
