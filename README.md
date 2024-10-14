@@ -1,6 +1,6 @@
 # boilerplate-ng
 
-🔨 Simple Angular starter
+🔨 Simple Angular starter (An empty Angular app without Angular CLI)
 
 ## Preview 🎉
 
@@ -8,7 +8,8 @@
 
 ## Features
 
-* ✅ An empty Angular app (without Angular CLI)
+* ✅ Support Angular v18
+* ✅ Support Webpack 5
 
 ## Usage
 
@@ -34,4 +35,4 @@
 
 ## License
 
-[The MIT License](https://piecioshka.mit-license.org) @ 2018
+[The MIT License](https://piecioshka.mit-license.org) @ 2018-2024
