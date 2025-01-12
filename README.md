@@ -8,10 +8,10 @@
 
 ## Features
 
-* ✅ Support Angular v18
-* ✅ Support RxJS v7
-* ✅ Support Webpack v5
-* ✅ Support Node.js v18 (defined in `.nvmrc`)
+- ✅ Support Angular v18
+- ✅ Support RxJS v7
+- ✅ Support Webpack v5
+- ✅ Support Node.js v18 (defined in `.nvmrc`)
 
 ## Installation
 
@@ -40,4 +40,4 @@ npm run deploy
 
 ## License
 
-[The MIT License](https://piecioshka.mit-license.org) @ 2018-2024
+[The MIT License](https://piecioshka.mit-license.org) @ 2018
